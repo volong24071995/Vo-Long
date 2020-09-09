@@ -1,0 +1,2 @@
+0,com,cna tin,10000,com ga
+1,chao,can tin,20000,dasfd

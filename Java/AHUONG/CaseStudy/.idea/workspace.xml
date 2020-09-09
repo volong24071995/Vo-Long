@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e0c76b73-0ef8-427b-bdfe-0588d66c0786" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1hAjq7MrdlAVSnSgI30dRUnVUv5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Castudy" />
+  </component>
+  <component name="RunManager">
+    <configuration name="MainUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.codegym.ui.MainUI" />
+      <module name="CaseStudy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.codegym.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainUI" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e0c76b73-0ef8-427b-bdfe-0588d66c0786" name="Default Changelist" comment="" />
+      <created>1599460978592</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599460978592</updated>
+      <workItem from="1599460979713" duration="53000" />
+      <workItem from="1599461070255" duration="143000" />
+      <workItem from="1599462088602" duration="15000" />
+      <workItem from="1599464685456" duration="1045000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="420" y="95" key="FileChooserDialogImpl" timestamp="1599465728360">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="420" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1599465728360" />
+    <state width="1252" height="2" key="GridCell.Tab.0.bottom" timestamp="1599465731140">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1252" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1599465731140" />
+    <state width="1252" height="2" key="GridCell.Tab.0.center" timestamp="1599465731140">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1252" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1599465731140" />
+    <state width="1252" height="2" key="GridCell.Tab.0.left" timestamp="1599465731140">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1252" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1599465731140" />
+    <state width="1252" height="2" key="GridCell.Tab.0.right" timestamp="1599465731140">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1252" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1599465731140" />
+  </component>
+</project>

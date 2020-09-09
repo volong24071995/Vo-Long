@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ThuatToanChen/ThuatToanChen.iml" filepath="$PROJECT_DIR$/ThuatToanChen/ThuatToanChen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThuatToanChon/ThuatToanChon.iml" filepath="$PROJECT_DIR$/ThuatToanChon/ThuatToanChon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThuatToanNoiBot/ThuatToanNoiBot.iml" filepath="$PROJECT_DIR$/ThuatToanNoiBot/ThuatToanNoiBot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ThuatToanSapXep.iml" filepath="$PROJECT_DIR$/.idea/ThuatToanSapXep.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,36 @@
+
+button{
+    background-color: rgb(10, 141, 21);
+    color: white;
+}
+#container1{
+    display: block;
+    background-color: rgb(209, 242, 248);
+    width: 300px;
+    height: 100px;
+
+}
+#container1 div{
+    padding-top: 18px;
+}
+table{
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 500px;
+}
+td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+
+}
+table{
+    border: 1px solid black;
+}
+#container2{
+    font-weight: bolder;
+    color: crimson;
+}
+.namepro{
+    color: navy;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Bài tập] Phát triển chương trình thể hiện sự tương tác giữa hai đối tượng: công tắc và bóng đèn</title>
+</head>
+<body>
+    <p id="bongden"></p>
+    <p  id="ketnoi"><button onclick="conect()">Conect</button></p> 
+    <script>
+        class ElectricLamp{
+            constructor(status){
+                this.status=status;
+            }
+
+            turon(){
+                if(this.status){
+                    alert("sang"); 
+                } 
+                if(!this.status){
+                    alert("sang");
+                } 
+                this.status=false;
+                document.getElementById("bongden").innerHTML='<img src="../[Thực hành] Xây dựng lớp mô phỏng sự hoạt động của đèn pin/Bongmo.PNG" alt="">'
+
+            }
+
+            turoff(){
+                if(!this.status){
+                    alert("toi");
+                }
+                if(this.status){
+                    alert("toi");
+                }
+                this.status=true;
+                document.getElementById("bongden").innerHTML='<img src="../[Thực hành] Xây dựng lớp mô phỏng sự hoạt động của đèn pin/Bongtat.PNG" alt="">';
+            }
+        }
+        class SwitchButton{
+            constructor(statusct){
+                this.statusct=statusct;
+            }
+
+            switchOff(){
+                if(this.lamp.status){
+                    this.lamp.turoff();
+                }
+                if(!this.lamp.status){
+                    this.lamp.turoff();
+                }
+            }
+
+            switchOn(){
+                if(!this.lamp.status){
+                    this.lamp.turon();
+                }
+                if(this.lamp.status){
+                    this.lamp.turon();
+                }
+            }
+
+            connectTolamp(electricLamp){
+                this.lamp=electricLamp;
+                alert("ket noi thanh cong")
+                if(this.statusct){
+                    alert("Den dang sang");
+                    document.getElementById("bongden").innerHTML='<img src="../[Thực hành] Xây dựng lớp mô phỏng sự hoạt động của đèn pin/Bongmo.PNG" alt="">'
+                }
+                else {
+                    alert("Den dang tat");
+                    document.getElementById("bongden").innerHTML='<img src="../[Thực hành] Xây dựng lớp mô phỏng sự hoạt động của đèn pin/Bongtat.PNG" alt="">';
+                    }
+                this.lamp.status=this.statusct;
+                
+            }
+        }
+
+        let lamppp=new ElectricLamp(false);
+        let nut=new SwitchButton(false,lamppp);
+        function conect(){
+            nut.connectTolamp(lamppp);
+            document.getElementById("ketnoi").innerHTML='<button onclick=" nut.switchOn()" >Turnon</button> <button onclick="nut.switchOff()" >Turnoff</button> <button onclick="disconect()" >DisConect</button>';
+        }
+        function disconect(){
+            alert("Ngat ket noi");
+            document.getElementById("bongden").innerHTML=""
+            document.getElementById("ketnoi").innerHTML='<button onclick="conect()">Conect</button>';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Apple {
+            constructor() {
+                this.weigth = 10;
+            }
+
+
+            decrese() {
+                this.weigth--;
+            }
+
+            isEmpty() {
+                if (this.weigth <= 0) {
+                    return true;
+                }
+                else return false;
+            }
+
+            getWeight() {
+                return this.weigth;
+            }
+        }
+        class Human {
+            constructor(name, gender, weigth) {
+                this.name = name;
+                this.gender = gender;
+                this.weigth = weigth;
+            }
+
+            isMale() {
+                return this.gender;
+            }
+
+            setgender(gender) {
+                this.gender = gender;
+            }
+
+            checkApple(apple) {
+                return apple.isEmpty();
+            }
+
+            eat(apple) {
+                if (checkApple(apple)) {
+                    console.log("het tao")
+                }
+                else {
+                    console.log("cap cap")
+                    this.weigth++;
+                    apple.decrese();
+                }
+            }
+
+            say(str){
+                console.log(str);
+            }
+
+            getname(){
+                return this.name;
+            }
+
+            setname(name){
+                this.name=name;
+            }
+
+            getWeight(){
+                return this.weigth;
+            }
+
+            setWeight(weigth){
+                this.weigth=weigth;
+            }
+        }
+        let appp1=new Apple();
+        let human1=new Human("Adam",true,69);
+        let human2=new Human("Eva",false,96);
+        
+        human1.eat(appp1);
+    </script>
+</body>
+
+</html>

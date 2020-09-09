@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="csscasetudy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    .mySlides {
+        display: none;
+    }
+</style>
+
+<body>
+    <div class="div1">
+        <div class="logo">
+            <a href="#">
+                <img src="./img-logo.jpg">
+            </a>
+        </div>
+        <div class="search">
+            <div class="search-1">
+                <div class="search-1-1">
+                    <input type="search" placeholder="Tìm kiếm sản phẩm">
+                </div>
+                <div class="search-1-2">
+                    <button class="fa fa-search"></button>
+                </div>
+            </div>
+            <div class="search-2">
+                <span>Gợi ý tìm kiếm: kim luồn tĩnh mạch, test nước tiểu ...</span>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="phone">
+                <p>
+                    Gọi mua hàng:
+                    <b>0868 963 638</b>
+                </p>
+            </div>
+            <div class="method">
+                <div>
+                    <div><i class="fa fa-truck" style="font-size:25px;"></i></div>
+                    <div>
+                        <b>Giao Hàng</b><br>
+                        <text>Trên toàn quốc</text>
+                    </div>
+                </div>
+                <div>
+                    <div><i class="fa fa-archive" style="font-size:25px;"></i></div>
+                    <div>
+                        <b>Miễn Phí</b><br>
+                        <text>Đổi trả hàng</text>
+                    </div>
+                </div>
+                <div>
+                    <div><i class="fa fa-dollar" style="font-size:25px;"></i></div>
+                    <div>
+                        <b>Thanh toán</b><br>
+                        <text>Khi nhận hàng</text>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <ul>
+            <li class="title"><a href="#">trang chủ</a></li>
+            <li class="title"><a href="#">giới thiệu</a></li>
+            <li class="title"><a href="#">khách hàng</a></li>
+            <li class="title">
+                <a href="#">
+                    hỗ trợ khách hàng
+                    <i class="fa fa-sort-down"></i>
+                </a>
+                <ul>
+                    <li><a href="#">hướng dẫn mua hàng</a></li>
+                    <li><a href="#">hướng dẫn thanh toán</a></li>
+                </ul>
+            </li>
+            <li class="title">
+                <a href="#">
+                    chính sách bán hàng
+                    <i class="fa fa-sort-down"></i>
+                </a>
+                <ul>
+                    <li><a href="#">chính sách giao nhận</a></li>
+                    <li><a href="#">chính sách đổi trả</a></li>
+                    <li><a href="#">chính sách bảo hành</a></li>
+                    <li><a href="#">cam kết bán hàng</a></li>
+                </ul>
+            </li>
+            <li class="title"><a href="#">liên hệ</a></li>
+            <li class="title">
+                <a href="#">
+                    góc tư vấn
+                    <i class="fa fa-sort-down"></i>
+                </a>
+                <ul>
+                    <li><a href="#">tư vấn giới thiệu sản phẩm</a></li>
+                </ul>
+            </li>
+            <li class="title" style="border-right: none;">
+                <a href="#">
+                    <i class="fa fa-cart-plus"></i> giỏ hàng
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="w3-content w3-section" style="max-width:500px">
+        <img class="mySlides w3-animate-left" src="bansanpham/spmoi/sp1/nuoc-rua-tay-gel-alfasept-handgel-img1.jpg" style="width:100%">
+        <img class="mySlides w3-animate-left" src="bansanpham/spmoi/sp1/nuoc-rua-tay-gel-alfasept-handgel-img2.jpg" style="width:100%">
+        <img class="mySlides w3-animate-left" src="bansanpham/spmoi/sp1/nuoc-rua-tay-gel-alfasept-handgel-img3.jpg" style="width:100%">
+
+    </div>
+</body>
+<script>
+    let myIndex = 0;
+    carousel();
+
+    function carousel() {
+        let i;
+        let x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2500);
+    }
+</script>
+
+
+</html>

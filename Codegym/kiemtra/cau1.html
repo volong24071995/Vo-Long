@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let array = [];
+        // let n = parseInt(prompt("Nhập độ dài của mảng điểm: "));
+        // for (let i = 0; i < n; i++) {
+        //     array[i] = parseInt(prompt("Nhập điểm số của học viên: "));
+        // }
+
+        function findMaxScore(arr) {
+            let max = arr[0];
+            for (let j = 0; j < arr.length; j++) {
+                if (max < arr[j]) {
+                    max = arr[j];
+                }
+            }
+            return max;
+        }
+        // let max = findMaxScore(array);
+        // document.write("Điểm cao nhất là: ", max);
+
+        let arr1 = [10, 9, 5, 8, 7];
+        let arr2 = [4, 9, 5, 8, 7];
+        let arr3 = [10, 22, 5, 8, 7];
+        // Test
+        console.log("Case 1: " + findMaxScore(arr1));
+        console.log("Case 2: " + findMaxScore(arr2));
+        console.log("Case 3: " + findMaxScore(arr3));
+    </script>
+</body>
+
+</html>

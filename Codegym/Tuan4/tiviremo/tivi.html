@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Bài tập] Phát triển chương trình sử dụng Remote để điều khiển Tivi</title>
+</head>
+
+<body>
+    <div style="border: 3px solid red; width: 560px; height: 315px;" id="tivi">
+        <video autoplay="1" style="width:100%; height: 100%;">
+            <source src="CỨ NGỠ LÀ ANH - ĐINH TÙNG HUY - Siêu Phẩm Cover Buồn Nhất TikTok 2020.mp4" type="video/mp4" />
+        </video>
+    </div>
+    <script>
+        class Remote {
+            contructor() {
+
+            }
+
+            remotetangvl(tivi) {
+                this.tivi = tivi;
+                this.tivi.getvolum()++;
+            }
+
+            remotegiamvl(tivi) {
+                this.tivi = tivi;
+                this.tivi.getvolum()--;
+            }
+        }
+        class Tivi {
+            contructor(status, volum, kenh) {
+                this.status = status;
+                this.volum = volum;
+                this.kenh = kenh;
+            }
+
+            getkenh() {
+                return this.kenh;
+            }
+
+            getvolum() {
+                return this.volum;
+            }
+
+
+            movekenh(ma) {
+                switch (ma) {
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                    case 5:
+                    case 6:
+                    case 7:
+                    case 8:
+                    case 9:
+                    case 10:
+                }
+
+            }
+            tangvolum() {
+                this.volum++;
+            }
+
+            giamvolum() {
+                this.volum--;
+            }
+
+            turnon(){
+
+            }
+
+        }
+        let tivi=new Tivi(true,)
+    </script>
+</body>
+
+</html>

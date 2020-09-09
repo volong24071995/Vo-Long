@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <button onclick="randomanh()">Play</button><br>
+    <img src="anh1.PNG" id="head" onclick="img1()" />
+    <img src="anh2.png" id="dear" onclick="img2()" />
+    <img src="anh3.png" id="last" onclick="img3()" /><br>
+    <button onclick="complete()">Hoành thành</button>
+<script>
+
+    function randomanh() {
+        let a, b, c;
+        a = document.getElementById("head");
+        b = document.getElementById("dear");
+        c = document.getElementById("last");
+        let x = Math.round(Math.random() * 2 + 1);
+        switch (x) {
+            case 1:
+                a.src = "anh1.PNG";
+                b.src = "anh3.PNG";
+                c.src = "anh2.PNG";
+                break;
+            case 2:
+                a.src = "anh3.PNG";
+                b.src = "anh1.PNG";
+                c.src = "anh2.PNG";
+                break;
+            case 3:
+                a.src = "anh2.PNG";
+                b.src = "anh1.PNG";
+                c.src = "anh3.PNG";
+                break;
+        }
+    }
+    function img1() {
+        a = document.getElementById("head");
+        let x = Math.round(Math.random() * 2 + 1);
+        switch (x) {
+            case 1:
+                a.src = "anh1.PNG";
+                break;
+            case 2:
+                a.src = "anh2.PNG";
+                break;
+            case 3:
+                a.src = "anh3.PNG";
+                break;
+        }
+
+    }
+    function img2() {
+        b = document.getElementById("dear");
+        let x = Math.round(Math.random() * 2 + 1);
+        switch (x) {
+            case 1:
+                b.src = "anh1.PNG";
+                break;
+            case 2:
+                b.src = "anh2.PNG";
+                break;
+            case 3:
+                b.src = "anh3.PNG";
+                break;
+        }
+    }
+    function img3() {
+        c = document.getElementById("last");
+        let x = Math.round(Math.random() * 2 + 1);
+        switch (x) {
+            case 1:
+                c.src = "anh1.PNG";
+                break;
+            case 2:
+                c.src = "anh2.PNG";
+                break;
+            case 3:
+                c.src = "anh3.PNG";
+                break;
+        }
+    }
+    function complete() {
+        a = document.getElementById("head").src;
+        console.log(a)
+        b = document.getElementById("dear").src;
+        console.log(b)
+        c = document.getElementById("last").src;
+        console.log(c)
+        if ((a === 'http://127.0.0.1:5500/BaitapJava/[B%C3%A0i%20t%E1%BA%ADp]%20Game%20puzzle/anh1.PNG')&&(b === 'http://127.0.0.1:5500/BaitapJava/[B%C3%A0i%20t%E1%BA%ADp]%20Game%20puzzle/anh2.PNG')&&(c === 'http://127.0.0.1:5500/BaitapJava/[B%C3%A0i%20t%E1%BA%ADp]%20Game%20puzzle/anh3.PNG')){
+            alert("I <3 U pacpac")
+            
+        }
+    }
+</script>
+</html>

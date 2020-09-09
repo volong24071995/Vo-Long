@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let array = [];
+        // let n = parseInt(prompt("Nhập độ dài của mảng"));
+        // for (let i = 0; i < n; i++) {
+        //     array[i] = prompt("Nhập các phần tử của mảng");
+        // }
+        // let index = parseInt(prompt("Nhập vị trí cần loại bỏ"));
+
+        function tryRemoveFromArray(arr, a) {
+            let newarray = [];
+            if (a < 0 || a >= arr.length) {
+                return arr;
+            } else {
+                for (let i = 0; i < arr.length; i++) {
+                    if (i === a) {
+                        continue;
+                    } else newarray.push(arr[i])
+                }
+                return newarray;
+            }
+        }
+        // let newarray = tryRemoveFromArray(array, index);
+        // console.log(newarray);
+
+        let arr1 = [10, 9, 5, 8, 7];
+        let arr2 = [4, 9, 5, 8, 7];
+        let arr3 = [10, 22, 5, 8, 7];
+
+        console.log(tryRemoveFromArray(arr1, 3));
+        console.log(tryRemoveFromArray(arr2, 6));
+        console.log(tryRemoveFromArray(arr3, 0));
+    </script>
+</body>
+
+</html>
